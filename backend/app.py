@@ -6,7 +6,7 @@ from auth import auth_bp, init_bcrypt
 app = Flask(__name__)
 CORS(app)
 
-app.config['SECRET_KEY'] = '2755c0df13cf42ab17ee9cfa6679b892495addf7ee74d7134c3d8c02300a7b5e'
+app.config['SECRET_KEY'] = 'API_KEY'
 
 # Initialize Bcrypt
 init_bcrypt(app)
