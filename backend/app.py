@@ -15,7 +15,7 @@ init_bcrypt(app)
 app.register_blueprint(auth_bp, url_prefix="/auth")
 
 # Gemini API Key Configuration
-GEMINI_API_KEY = "AIzaSyB_e78uenctaAkC1G0JvjIwKBElZIhqkt4"
+GEMINI_API_KEY = "API_KEY"
 genai.configure(api_key=GEMINI_API_KEY)
 
 @app.route("/gemini/chat", methods=["POST"])
